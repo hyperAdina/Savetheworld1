@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YKWA</title>
+    <link rel='stylesheet' type='text/css' href="{{url_for('static',filename='style.css')}}">
+  </head>
+</html>
+
+
+
+
+<h1>Good Morning Everyone!</h1>
+<h2>The first lesson is CS</h2>
+<p>
+  We are learning Flask today! It is quite fun, including python and html but also a bit confusing. I think Java is easier to learn and type 
+</p>
+<form method="post" action="/">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"><br>
+   <label for="Email">Email:</label>
+  <input type="text" id="Email" Birthday="Email"><br>
+  <label for="gender">Gender:</label>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  <input type="radio" id="others" name="gender" value="others">
+  <label for="others">Others</label>
+  <label for="preferences">Preferences:</label><br>
+  <input type="checkbox" id="preference1" name="preferences" value="p1">
+  <label for="preference1">Preference1</label>
+  <input type="checkbox" id="preference2" name="preferences" value="p2">
+  <label for="preference2">Preference2</label>
+  <input type="checkbox" id="preference3" name="preferences" value="p3">
+  <label for="preference3">Preference3</label>
+</form> 
+{% if name %}
+<p>{{ name }}</p>
+{% endif %}
+{% if Email %}
+<p>{{ Email }}</p>
+{% endif %}
+{% if gender%}
+<p>{{ gender }}</p>
+{% endif %}
+{% if preferences%}
+<p>{{ preferences }}</p>
+{% endif %}
+{% if preferences %}
+      {% for preference in preferences %}
+      <h2>{{ preference }}</h2>
+      {% endfor %} 
+    {% endif %}
