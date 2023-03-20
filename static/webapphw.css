@@ -89,7 +89,7 @@
   position: relative;
   -webkit-animation: bounce05 var(--duration) linear infinite;
   animation: bounce05 var(--duration) linear infinite;
-  float: right;
+  float: left;
   
 }
 

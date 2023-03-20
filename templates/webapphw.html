@@ -2,7 +2,7 @@
 <html>
   
   <head>
-    <title>YKWA</title>
+    <title>Todo list</title>
     <link rel='stylesheet' type='text/css' href="{{url_for('static',filename='webapphw.css')}}">
   </head>
 <head>
@@ -15,22 +15,28 @@
    
 </head>
 <body>
-	
+	  <style>
+body {
+  background-image: url('https://i.pinimg.com/564x/2f/43/f3/2f43f3300d6a8f342bd93437673ddeab.jpg');
+  
+ background-size: cover;
+  background-position: center;
+}
+</style>
 
 
 <div id="container" touch-action="none"></div>
 	<div class="content">
-		<h1>My daily todo
-        <label class="checkbox-btn">
-            <label for="checkbox"></label>
-            <input id="checkbox" type="checkbox">
-            <span class="checkmark"></span>
-            <link rel="stylesheet" type="text/css" href="label.css">
-            
-        </label>
-        
+		
+     
        
        <h1>Weekly</h1>
+    <style>
+      h1{
+        text-align: center;
+      }
+    </style>
+      
 	<table>
 		<thead>
 			<tr>
@@ -319,79 +325,27 @@
                 </tr>
             </tbody>
         </table>
-       <h1>Todo List</h1>
+      <br>
+      <br>
+      <h1>Daily todo</h1>
     <table>
       <thead>
         <tr>
-          <th>Subject 1</th>
-          <th>Subject 2</th>
-          <th>Subject 3</th>
+          <th>Study</th>
+          <th>CCA</th>
+          <th>Life</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td id="Subject 1"></td>
-          <td id="Subject 2"></td>
-          <td id="Subject 3"></td>
+          <td id="Study"></td>
+          <td id="CCA"></td>
+          <td id="Life"></td>
         </tr>
-        <tr>
-          <td id="Subject 1"></td>
-          <td id="Subject 2"></td>
-          <td id="Subject 3"></td>
-        </tr>
-        <tr>
-          <td id="Subject 1"></td>
-          <td id="Subject 2"></td>
-          <td id="Subject 3"></td>
-        </tr>
+       
       </tbody>
     </table>
-    <br>
-    <table>
-      <thead>
-        <tr>
-          <th></th>
-          <th>Monday</th>
-          <th>Tuesday</th>
-          <th>Wednesday</th>
-          <th>Thursday</th>
-          <th>Friday</th>
-          <th>Saturday</th>
-          <th>Sunday</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Subject 1</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Subject 2</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Subject 3</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
+   
        <script src="{{ url_for('static', filename='main.js') }}"></script>
 
       
@@ -504,6 +458,7 @@
     </div>
   </div>
 </div>
-	</div>         
+	</div> 
+
 </body>
 </html>
